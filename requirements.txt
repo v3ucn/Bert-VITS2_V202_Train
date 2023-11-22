@@ -1,0 +1,33 @@
+librosa==0.9.1
+matplotlib
+numpy
+numba
+phonemizer
+scipy
+tensorboard
+Unidecode
+amfm_decompy
+jieba
+transformers
+pypinyin
+cn2an
+gradio
+av
+mecab-python3
+loguru
+unidic-lite
+cmudict
+fugashi
+num2words
+PyYAML
+requests
+pyopenjtalk; sys_platform == 'linux'
+openjtalk; sys_platform != 'linux'
+jaconv
+psutil
+GPUtil
+vector_quantize_pytorch
+g2p_en
+sentencepiece
+pykakasi
+langid

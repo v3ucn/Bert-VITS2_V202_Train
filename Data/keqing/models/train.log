@@ -1,0 +1,93 @@
+2023-11-22 11:52:34,278	models	INFO	{'train': {'log_interval': 50, 'eval_interval': 50, 'seed': 42, 'epochs': 200, 'learning_rate': 0.0001, 'betas': [0.8, 0.99], 'eps': 1e-09, 'batch_size': 8, 'fp16_run': False, 'lr_decay': 0.99995, 'segment_size': 16384, 'init_lr_ratio': 1, 'warmup_epochs': 0, 'c_mel': 45, 'c_kl': 1.0, 'skip_optimizer': True}, 'data': {'training_files': 'Data/keqing/filelists/train.list', 'validation_files': 'Data/keqing/filelists/val.list', 'max_wav_value': 32768.0, 'sampling_rate': 44100, 'filter_length': 2048, 'hop_length': 512, 'win_length': 2048, 'n_mel_channels': 128, 'mel_fmin': 0.0, 'mel_fmax': None, 'add_blank': True, 'n_speakers': 1, 'cleaned_text': True, 'spk2id': {'keqing': 0}}, 'model': {'use_spk_conditioned_encoder': True, 'use_noise_scaled_mas': True, 'use_mel_posterior_encoder': False, 'use_duration_discriminator': True, 'inter_channels': 192, 'hidden_channels': 192, 'filter_channels': 768, 'n_heads': 2, 'n_layers': 6, 'kernel_size': 3, 'p_dropout': 0.1, 'resblock': '1', 'resblock_kernel_sizes': [3, 7, 11], 'resblock_dilation_sizes': [[1, 3, 5], [1, 3, 5], [1, 3, 5]], 'upsample_rates': [8, 8, 2, 2, 2], 'upsample_initial_channel': 512, 'upsample_kernel_sizes': [16, 16, 8, 2, 2], 'n_layers_q': 3, 'use_spectral_norm': False, 'gin_channels': 256}, 'version': '2.0', 'model_dir': 'Data\\keqing\\models'}
+2023-11-22 11:52:34,278	models	WARNING	E:\work\Bert-VITS2-v202 is not a git repository, therefore hash value comparison will be ignored.
+2023-11-22 11:52:35,534	models	INFO	Loaded checkpoint 'Data\keqing\models\DUR_0.pth' (iteration 0)
+2023-11-22 11:52:35,829	models	ERROR	emb_g.weight is not in the checkpoint
+2023-11-22 11:52:35,889	models	INFO	Loaded checkpoint 'Data\keqing\models\G_0.pth' (iteration 0)
+2023-11-22 11:52:36,049	models	INFO	Loaded checkpoint 'Data\keqing\models\D_0.pth' (iteration 0)
+2023-11-22 11:52:51,757	models	INFO	Train Epoch: 1 [0%]
+2023-11-22 11:52:51,765	models	INFO	[2.6172502040863037, 2.400261878967285, 6.935832977294922, 19.295040130615234, 2.603893995285034, 3.6684017181396484, 0, 0.0001]
+2023-11-22 11:53:04,903	models	INFO	Saving model and optimizer state at iteration 1 to Data\keqing\models\G_0.pth
+2023-11-22 11:53:05,731	models	INFO	Saving model and optimizer state at iteration 1 to Data\keqing\models\D_0.pth
+2023-11-22 11:53:06,271	models	INFO	Saving model and optimizer state at iteration 1 to Data\keqing\models\DUR_0.pth
+2023-11-22 12:00:57,405	models	INFO	Train Epoch: 1 [69%]
+2023-11-22 12:00:57,421	models	INFO	[2.415853500366211, 2.342927932739258, 10.392692565917969, 20.212182998657227, 2.5987472534179688, 2.3637630939483643, 50, 0.0001]
+2023-11-22 12:01:13,436	models	INFO	Saving model and optimizer state at iteration 1 to Data\keqing\models\G_50.pth
+2023-11-22 12:01:16,591	models	INFO	Saving model and optimizer state at iteration 1 to Data\keqing\models\D_50.pth
+2023-11-22 12:01:18,648	models	INFO	Saving model and optimizer state at iteration 1 to Data\keqing\models\DUR_50.pth
+2023-11-22 12:04:23,594	models	INFO	====> Epoch: 1
+2023-11-22 12:08:10,760	models	INFO	Train Epoch: 2 [39%]
+2023-11-22 12:08:10,769	models	INFO	[2.641335964202881, 2.2404472827911377, 7.342029571533203, 17.453264236450195, 2.2478935718536377, 2.0729691982269287, 100, 9.999500000000001e-05]
+2023-11-22 12:08:29,918	models	INFO	Saving model and optimizer state at iteration 2 to Data\keqing\models\G_100.pth
+2023-11-22 12:08:32,426	models	INFO	Saving model and optimizer state at iteration 2 to Data\keqing\models\D_100.pth
+2023-11-22 12:08:34,318	models	INFO	Saving model and optimizer state at iteration 2 to Data\keqing\models\DUR_100.pth
+2023-11-22 12:14:56,586	models	INFO	====> Epoch: 2
+2023-11-22 12:16:08,184	models	INFO	Train Epoch: 3 [8%]
+2023-11-22 12:16:08,203	models	INFO	[2.482842445373535, 2.5457749366760254, 12.222139358520508, 21.4875431060791, 2.119749069213867, 1.6783318519592285, 150, 9.999000025000001e-05]
+2023-11-22 12:16:24,933	models	INFO	Saving model and optimizer state at iteration 3 to Data\keqing\models\G_150.pth
+2023-11-22 12:16:27,800	models	INFO	Saving model and optimizer state at iteration 3 to Data\keqing\models\D_150.pth
+2023-11-22 12:16:29,582	models	INFO	Saving model and optimizer state at iteration 3 to Data\keqing\models\DUR_150.pth
+2023-11-22 12:16:29,655	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\D_50.pth
+2023-11-22 12:23:48,514	models	INFO	Train Epoch: 3 [78%]
+2023-11-22 12:23:48,535	models	INFO	[2.71824049949646, 2.1843855381011963, 12.171077728271484, 19.239822387695312, 2.251070022583008, 2.1026957035064697, 200, 9.999000025000001e-05]
+2023-11-22 12:24:06,306	models	INFO	Saving model and optimizer state at iteration 3 to Data\keqing\models\G_200.pth
+2023-11-22 12:24:08,788	models	INFO	Saving model and optimizer state at iteration 3 to Data\keqing\models\D_200.pth
+2023-11-22 12:24:10,699	models	INFO	Saving model and optimizer state at iteration 3 to Data\keqing\models\DUR_200.pth
+2023-11-22 12:24:10,724	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\DUR_50.pth
+2023-11-22 12:24:10,781	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\D_100.pth
+2023-11-22 12:26:07,177	models	INFO	====> Epoch: 3
+2023-11-22 12:31:32,206	models	INFO	Train Epoch: 4 [47%]
+2023-11-22 12:31:32,235	models	INFO	[2.5789990425109863, 2.3512229919433594, 9.642658233642578, 19.22054672241211, 2.1946823596954346, 1.8027441501617432, 250, 9.998500074998751e-05]
+2023-11-22 12:31:54,223	models	INFO	Saving model and optimizer state at iteration 4 to Data\keqing\models\G_250.pth
+2023-11-22 12:31:57,093	models	INFO	Saving model and optimizer state at iteration 4 to Data\keqing\models\D_250.pth
+2023-11-22 12:31:59,148	models	INFO	Saving model and optimizer state at iteration 4 to Data\keqing\models\DUR_250.pth
+2023-11-22 12:31:59,166	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\DUR_100.pth
+2023-11-22 12:31:59,210	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\D_150.pth
+2023-11-22 12:37:26,062	models	INFO	====> Epoch: 4
+2023-11-22 12:39:35,524	models	INFO	Train Epoch: 5 [17%]
+2023-11-22 12:39:35,546	models	INFO	[2.6785247325897217, 2.1551172733306885, 8.38232421875, 17.709781646728516, 2.05966854095459, 1.9085217714309692, 300, 9.998000149995001e-05]
+2023-11-22 12:39:54,165	models	INFO	Saving model and optimizer state at iteration 5 to Data\keqing\models\G_300.pth
+2023-11-22 12:39:56,950	models	INFO	Saving model and optimizer state at iteration 5 to Data\keqing\models\D_300.pth
+2023-11-22 12:39:58,792	models	INFO	Saving model and optimizer state at iteration 5 to Data\keqing\models\DUR_300.pth
+2023-11-22 12:39:58,862	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\G_50.pth
+2023-11-22 12:39:58,863	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\DUR_150.pth
+2023-11-22 12:39:58,907	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\D_200.pth
+2023-11-22 12:47:31,901	models	INFO	Train Epoch: 5 [86%]
+2023-11-22 12:47:31,948	models	INFO	[2.3962249755859375, 2.189703941345215, 10.263145446777344, 19.148630142211914, 2.056314706802368, 1.699308156967163, 350, 9.998000149995001e-05]
+2023-11-22 12:47:52,654	models	INFO	Saving model and optimizer state at iteration 5 to Data\keqing\models\G_350.pth
+2023-11-22 12:47:55,393	models	INFO	Saving model and optimizer state at iteration 5 to Data\keqing\models\D_350.pth
+2023-11-22 12:47:57,084	models	INFO	Saving model and optimizer state at iteration 5 to Data\keqing\models\DUR_350.pth
+2023-11-22 12:47:57,157	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\G_100.pth
+2023-11-22 12:47:57,157	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\DUR_200.pth
+2023-11-22 12:47:57,199	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\D_250.pth
+2023-11-22 12:48:41,849	models	INFO	====> Epoch: 5
+2023-11-22 12:54:56,188	models	INFO	Train Epoch: 6 [56%]
+2023-11-22 12:54:56,211	models	INFO	[2.508025646209717, 2.228350877761841, 9.978997230529785, 18.10502815246582, 2.1845388412475586, 1.9281296730041504, 400, 9.997500249987501e-05]
+2023-11-22 12:55:14,971	models	INFO	Saving model and optimizer state at iteration 6 to Data\keqing\models\G_400.pth
+2023-11-22 12:55:17,672	models	INFO	Saving model and optimizer state at iteration 6 to Data\keqing\models\D_400.pth
+2023-11-22 12:55:19,454	models	INFO	Saving model and optimizer state at iteration 6 to Data\keqing\models\DUR_400.pth
+2023-11-22 12:55:19,547	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\G_150.pth
+2023-11-22 12:55:19,548	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\DUR_250.pth
+2023-11-22 12:55:19,626	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\D_300.pth
+2023-11-22 13:00:25,852	models	INFO	====> Epoch: 6
+2023-11-22 13:03:31,761	models	INFO	Train Epoch: 7 [25%]
+2023-11-22 13:03:31,779	models	INFO	[2.597799777984619, 2.3202006816864014, 9.908942222595215, 18.327375411987305, 2.122371196746826, 1.7814092636108398, 450, 9.997000374975002e-05]
+2023-11-22 13:03:51,202	models	INFO	Saving model and optimizer state at iteration 7 to Data\keqing\models\G_450.pth
+2023-11-22 13:03:53,461	models	INFO	Saving model and optimizer state at iteration 7 to Data\keqing\models\D_450.pth
+2023-11-22 13:03:55,501	models	INFO	Saving model and optimizer state at iteration 7 to Data\keqing\models\DUR_450.pth
+2023-11-22 13:03:55,589	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\G_200.pth
+2023-11-22 13:03:55,590	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\DUR_300.pth
+2023-11-22 13:03:55,664	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\D_350.pth
+2023-11-22 13:12:32,806	models	INFO	Train Epoch: 7 [94%]
+2023-11-22 13:12:32,842	models	INFO	[2.6077427864074707, 2.2624218463897705, 13.134469032287598, 20.745885848999023, 2.0243964195251465, 2.2607765197753906, 500, 9.997000374975002e-05]
+2023-11-22 13:12:52,425	models	INFO	Saving model and optimizer state at iteration 7 to Data\keqing\models\G_500.pth
+2023-11-22 13:12:54,860	models	INFO	Saving model and optimizer state at iteration 7 to Data\keqing\models\D_500.pth
+2023-11-22 13:12:56,825	models	INFO	Saving model and optimizer state at iteration 7 to Data\keqing\models\DUR_500.pth
+2023-11-22 13:12:56,887	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\G_250.pth
+2023-11-22 13:12:56,888	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\DUR_350.pth
+2023-11-22 13:12:56,961	models	INFO	.. Free up space by deleting ckpt Data\keqing\models\D_400.pth
+2023-11-22 13:13:38,201	models	INFO	====> Epoch: 7
+2023-11-22 13:20:28,763	models	INFO	{'train': {'log_interval': 50, 'eval_interval': 50, 'seed': 42, 'epochs': 200, 'learning_rate': 0.0001, 'betas': [0.8, 0.99], 'eps': 1e-09, 'batch_size': 8, 'fp16_run': False, 'lr_decay': 0.99995, 'segment_size': 16384, 'init_lr_ratio': 1, 'warmup_epochs': 0, 'c_mel': 45, 'c_kl': 1.0, 'skip_optimizer': False}, 'data': {'training_files': 'Data/keqing/filelists/train.list', 'validation_files': 'Data/keqing/filelists/val.list', 'max_wav_value': 32768.0, 'sampling_rate': 44100, 'filter_length': 2048, 'hop_length': 512, 'win_length': 2048, 'n_mel_channels': 128, 'mel_fmin': 0.0, 'mel_fmax': None, 'add_blank': True, 'n_speakers': 1, 'cleaned_text': True, 'spk2id': {'keqing': 0}}, 'model': {'use_spk_conditioned_encoder': True, 'use_noise_scaled_mas': True, 'use_mel_posterior_encoder': False, 'use_duration_discriminator': True, 'inter_channels': 192, 'hidden_channels': 192, 'filter_channels': 768, 'n_heads': 2, 'n_layers': 6, 'kernel_size': 3, 'p_dropout': 0.1, 'resblock': '1', 'resblock_kernel_sizes': [3, 7, 11], 'resblock_dilation_sizes': [[1, 3, 5], [1, 3, 5], [1, 3, 5]], 'upsample_rates': [8, 8, 2, 2, 2], 'upsample_initial_channel': 512, 'upsample_kernel_sizes': [16, 16, 8, 2, 2], 'n_layers_q': 3, 'use_spectral_norm': False, 'gin_channels': 256}, 'version': '2.0', 'model_dir': 'Data\\keqing\\models'}
+2023-11-22 13:20:28,763	models	WARNING	E:\work\Bert-VITS2-v202 is not a git repository, therefore hash value comparison will be ignored.
+2023-11-22 13:20:30,070	models	INFO	Loaded checkpoint 'Data\keqing\models\DUR_500.pth' (iteration 7)
+2023-11-22 13:20:30,563	models	INFO	Loaded checkpoint 'Data\keqing\models\G_500.pth' (iteration 7)
+2023-11-22 13:20:30,776	models	INFO	Loaded checkpoint 'Data\keqing\models\D_500.pth' (iteration 7)
