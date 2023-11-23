@@ -1,5 +1,7 @@
 # Bert-VITS2_train
 
+## 本项目fork自https://github.com/YYuX-1145/Bert-VITS2-Integration-package/tree/2.0.2
+
 ## 安装依赖
 
 ```
@@ -99,6 +101,29 @@ E:.
 
 python3 transcribe_genshin.py
 
+```
+
+
+## 如果是自主构建数据集，把音频素材以当前模型命名为*.wav文件，如meimei.wav，放入raw目录，随后运行脚本进行切分
+
+```
+python3 audio_slicer.py
+```
+
+```
+E:\work\Bert-VITS2-v202_demo\Data\meimei\raw\meimei>tree /f
+Folder PATH listing for volume myssd
+Volume serial number is 7CE3-15AE
+E:.
+    meimei_0.wav
+    meimei_1.wav
+    meimei_2.wav
+    meimei_3.wav
+    meimei_4.wav
+    meimei_5.wav
+    meimei_6.wav
+    meimei_7.wav
+    meimei_8.wav
 ```
 
 ## 文本预处理和生成bert模型可读文件：
